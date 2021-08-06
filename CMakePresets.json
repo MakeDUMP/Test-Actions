@@ -9,6 +9,7 @@
         {
             "name": "linux",
             "binaryDir": "${sourceDir}/.build-linux",
+            "generator": "Unix Makefiles",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
