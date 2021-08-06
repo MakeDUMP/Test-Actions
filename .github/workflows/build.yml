@@ -16,7 +16,12 @@ jobs:
         run: |
           cmake --preset linux
           cmake --build --preset linux
-
+      - name: Pack
+        uses: actions/upload-artifact@v2
+        with:
+          name: linux.txz
+          path: .build-linux/app
+    
 #   build-windows:
 #     runs-on: windows-latest
 #     steps:
