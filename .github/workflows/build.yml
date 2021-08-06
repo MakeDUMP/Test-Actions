@@ -28,8 +28,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: CMake
         run: |
-          cmake --preset windows --config MinSizeRel
-          cmake --build --preset windows
+          cmake --preset windows
+          cmake --build  --config MinSizeRel --preset windows
       - name: Pack
         uses: actions/upload-artifact@v2
         with:
