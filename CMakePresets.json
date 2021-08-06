@@ -19,7 +19,9 @@
             "binaryDir": "${sourceDir}/.build-windows",
             "generator": "Visual Studio 16 2019",
             "architecture": "x64",
-            "cacheVariables": {}
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "MinSizeRel"
+            }
         }
     ],
     "buildPresets": [
