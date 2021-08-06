@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: CMake
-        run: cmake --version
+        run: cmake --preset-lists
 
 #   build-windows:
 #     runs-on: windows-latest
