@@ -9,7 +9,6 @@
         {
             "name": "linux",
             "binaryDir": "${sourceDir}/.build-linux",
-            "generator": "Ninja",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
