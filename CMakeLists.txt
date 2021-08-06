@@ -28,6 +28,8 @@ target_compile_definitions(${PROJECT_NAME} PUBLIC ${PROJECT_COMPILE_DEFINES})
 target_compile_options(${PROJECT_NAME} PUBLIC ${PROJECT_COMPILE_OPTIONS})
 target_link_libraries(${PROJECT_NAME} ${PROJECT_LINK_LIBRARIES})
 
+set_property(TARGET ${PROJECT_NAME} PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+  
 # if(UNIX)
 #     set(CMAKE_SKIP_RPATH on) # отключим установку путей поиска Shared Library's
 #     target_link_options(${PROJECT_NAME} PUBLIC "$<$<CONFIG:Release>:-s>" "-rpath .") # выставим путь поиска '.'
